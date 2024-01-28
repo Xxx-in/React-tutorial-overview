@@ -1,5 +1,5 @@
 function Square({ value }) {
-  // event handler for JSX element to respond to interaction
+  //1 - event handler for JSX element to respond to interaction
   function clickHandler() {
     console.log(`clicked: ${value}`);
     alert(`clicked: ${value}`);

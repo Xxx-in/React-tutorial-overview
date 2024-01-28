@@ -1,5 +1,11 @@
 function Square({ value }) {
-  return <button className="square">{value}</button>;
+  // event handler for JSX element to respond to interaction
+  function clickHandler() {
+    console.log(`clicked: ${value}`);
+    alert(`clicked: ${value}`);
+  }
+
+  return <button className="square" onClick={clickHandler}>{value}</button>;
 }
 
 function Board() {

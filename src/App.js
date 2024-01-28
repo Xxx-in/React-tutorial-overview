@@ -1,11 +1,19 @@
+import { useState } from "react";
+
 function Square({ value }) {
+
   //1 - event handler for JSX element to respond to interaction
-  function clickHandler() {
-    console.log(`clicked: ${value}`);
+  function handleClick() {
+    console.log(`clicked: ${value} \n`);
     alert(`clicked: ${value}`);
+    newVal('X');
   }
 
-  return <button className="square" onClick={clickHandler}>{value}</button>;
+  //2 - state = variables that will change over time && is passed to Component for rendering
+  // useState to remember history of changed variables
+  var [val, newVal] = useState(null); //useState(initialise_value)
+
+  return <button className="square" onClick={handleClick}>{val}</button>;
 }
 
 function Board() {

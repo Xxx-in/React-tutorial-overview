@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// 3 - Each individual Square component will have their own state var
 function Square({ value }) {
 
   //1 - event handler for JSX element to respond to interaction

@@ -38,6 +38,10 @@ function Board() {
   // States are unqiue to each component
   // Parents can pass component to child; child cannot change state is parent but can trigger events to be handled by parent & indirectly alter state
   function handleClick(index) {
+    if (statesArray[index]) {
+      return; // if the Square has already been set to a state (i.e., already clicked once), do nothing when clicked again
+    }
+
     // Wrong way to do 
     setNewValue('X'); // If you reassign to single value, it will change from array to 'X'
 

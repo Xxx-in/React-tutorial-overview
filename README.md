@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 
+This project is an introductory project to explore the capabilities of React using the guide: [React Tutorial: Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe).
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
